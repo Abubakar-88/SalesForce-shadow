@@ -14,8 +14,8 @@ import io.cucumber.junit.CucumberOptions;
 		//plugin = {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
 	
 		features = {"src/test/resources/features"}, 
-		glue = {"stepDefinitions", "Hooks"}, 
-	     tags = "@smoke",
+		glue = {"step_definitions", "Hooks"}, 
+	   //  tags = "@smoke",
               //  {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
 	      plugin =  {"pretty", "html:target/cucumber-reports"}
 	
