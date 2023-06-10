@@ -6,12 +6,22 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\resources\\features"},	
-		glue = {"step_definitions"},
+		//features = {"src\\test\\resources\\features"},	
+		//glue = {"step_definitions"},
 		//tags = {},
 		//monochrome = true,
 		//dryRun = false,
-		plugin = {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
+		//plugin = {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
+	
+		features = {"src/test/resources/features"}, 
+		glue = {"stepDefinitions", "Hooks"}, 
+	    //    tags = "@smoke",
+              //  {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json" }
+	      plugin =  {"pretty", "html:target/cucumber-reports"}
+	
+	
+	
+	
 )
 public class Runner {
 
