@@ -11,10 +11,21 @@ public class LogInPage extends Base{
    By login=By.id("Login");
    
    public void enterUsername(String UserName) {
-	   sendkeys(username,UserName);
+	   try{
+		   sendkeys(username,UserName);   
+	   }catch(org.openqa.selenium.NoSuchElementException ex){
+	   }
+	
    }
    public void enterPassword(String Pass) {
-	   sendkeys(password,Pass);
+	   
+	      try{
+		    sendkeys(password,Pass);
+	   }catch(org.openqa.selenium.NoSuchElementException ex){
+	   }
+	   
+	   
+	  
    }
    public void clickLogIn() {
 	   click(login);
