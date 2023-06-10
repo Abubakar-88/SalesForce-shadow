@@ -1,12 +1,15 @@
 package step_definitions;
 
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import base.Base;
 
@@ -20,14 +23,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Hooks extends Base{
 	
 	@Before
-	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setHeadless(false);
-		driver = new ChromeDriver(chromeOptions);
-		chromeOptions.addArguments("--disable-notifications");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	public void setup() throws MalformedURLException {
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions chromeOptions = new ChromeOptions();
+//		chromeOptions.setHeadless(false);
+//		driver = new ChromeDriver(chromeOptions);
+//		chromeOptions.addArguments("--disable-notifications");
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		 ChromeOptions opt = new ChromeOptions();
+			
+		 driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),opt);
 		
 	}
 
