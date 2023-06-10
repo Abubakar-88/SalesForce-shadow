@@ -99,6 +99,7 @@ public class PopUpWindow_AppDetailsAndBrandingPage extends Base {
 	}
 	public void clickSaveButton() {
 		click(seveButton);
+		System.out.println("app successfully created");
 	}
     public void clearDeveloperName() {
     	clear(developer_Name);
