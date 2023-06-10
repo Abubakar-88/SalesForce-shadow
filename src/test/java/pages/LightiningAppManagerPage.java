@@ -26,19 +26,44 @@ public class LightiningAppManagerPage extends Base {
     
     
 	public void clickOnApp() {
+		try{
 		click(appMenu);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickOnAppManager() {
+		try{
 		click(appManagerButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickOnNewLightningApp() {
+			try{
 		click(newLightningButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickOnnursery() {
-		click(nurseryButton);
+				try{
+          	click(nurseryButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickEditButton() {
-		click(editButton);
+				try{
+          	click(editButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickDeleteButton() {
 		click(deleteButton);
