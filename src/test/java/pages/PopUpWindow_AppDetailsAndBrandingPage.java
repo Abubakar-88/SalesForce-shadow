@@ -23,15 +23,32 @@ public class PopUpWindow_AppDetailsAndBrandingPage extends Base {
 	
 	
 	public void enterAppName(String AppName) {
+			try{
 		sendkeys(appName, AppName);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 
 	public void enterDeveloperName(String DevoloperName) {
+			try{
 		sendkeys(developer_Name, DevoloperName);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
+		
 	}
 
 	public void enterDescription(String descriptionName) {
+		
+				try{
 		sendkeys(description, descriptionName);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 
 	public void clickOnUploadImage() {
@@ -64,11 +81,21 @@ public class PopUpWindow_AppDetailsAndBrandingPage extends Base {
 	}
 
 	public void clickOnNext() {
+				try{
 		click(nextButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	
 	public void clickSaveAndFinishButton() {
+				try{
 		click(saveAndfinishButton);
+		
+		}catch(org.openqa.selenium.NoSuchElementException ex){
+		}
+		
 	}
 	public void clickSaveButton() {
 		click(seveButton);
