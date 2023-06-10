@@ -28,7 +28,11 @@ public class LogInPage extends Base{
 	  
    }
    public void clickLogIn() {
-	   click(login);
+	       try{
+		   click(login);
+	   }catch(org.openqa.selenium.NoSuchElementException ex){
+	   }
+	 
    }
    
    
