@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class Base {
-	public static WebDriver driver; //default
+	protected static WebDriver driver;
     public  JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 
