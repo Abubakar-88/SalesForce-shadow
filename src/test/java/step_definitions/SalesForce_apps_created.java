@@ -31,6 +31,7 @@ public class SalesForce_apps_created extends Base {
 	@When("I hover on login menu")
 	public void i_hover_on_login_menu() {
 		landingPage.hoverOnLogin();
+		System.out.println("Hover");
 	}
 
 	@Then("I click on salesforce")
@@ -51,6 +52,7 @@ public class SalesForce_apps_created extends Base {
 	@Then("I click on login button")
 	public void i_click_on_login_button() {
 		logInPage.clickLogIn();
+		System.out.println("login succesfully");
 	}
 
 	@Then("I click on Apps")
