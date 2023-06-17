@@ -85,7 +85,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<!-- check all of its sub dirs to find Runner.java -->
+						check all of its sub dirs to find Runner.java -->
 						<include>**/Runner.java</include>
 					</includes> 
  					<systemPropertyVariables>
