@@ -85,12 +85,12 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						check all of its sub dirs to find Runner.java -->
+						check all of its sub dirs to find Runner.java 
 						<include>**/Runner.java</include>
 					</includes> 
  					<systemPropertyVariables>
-						<!--${project.basedir} is the root directory of your project. -->
-						<!--${project.build.directory} is equivalent to ${project.basedir}/target -->
+						<!--${project.basedir} is the root directory of your project. 
+						<!--${project.build.directory} is equivalent to ${project.basedir}/target 
 						<allure.results.directory>${project.basedir}/allure-results</allure.results.directory>
 					</systemPropertyVariables>				
 					<argLine>
